@@ -1,0 +1,17 @@
+<template name="temp">
+  <view class="container">
+    <view class="container-row">
+      <image src="{{small_avatar}}" style="width:60rpx;height:60rpx;" ></image>
+      <text wx:if="{{img_condition}}" style="margin-left:20rpx;font-size:26rpx;">{{date}}</text>
+    </view>
+    <text class="post-title">{{title}}</text>
+    <image src="{{post_img}}" style="width:100%"></image>
+    <text class="post-content">{{content}}</text>
+    <view class="container-row">
+      <image src="{{row1}}" style="width:40rpx;height:40rpx;margin-right:20rpx;"></image>
+      <text style="margin-right:20rpx;margin-right:20rpx;font-size:16rpx;">{{content1}}</text>
+      <image src="{{row2}}" style="width:40rpx;height:40rpx;margin-right:20rpx;"></image>
+      <text style="font-size:16rpx;">{{content2}}</text>
+    </view>
+  </view>
+</template>

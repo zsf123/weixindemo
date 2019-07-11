@@ -1,0 +1,9 @@
+<!--view相当于div容器,分隔页面，wxml编写页面骨架-->
+<view class="container">
+  <!-- 绝对路径 ：/斜线代表根目录 图片有默认值（未设置样式）:width:300px;height:225px;style="width:200rpx;height:200rpx;"-->
+  <image class="user-avatar" src="/images/1.png"></image>
+  <text class="user-font">hello,顺风</text>
+  <view class="container-border" bind:tap="Onparent">
+    <text class="border-title"  bind:tap="Ontap">开启小程序之旅</text>
+  </view>
+</view>

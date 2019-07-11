@@ -1,0 +1,34 @@
+.container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+page{
+  background-color:#b3d4db;
+  height:100%;
+}
+
+.user-avatar{
+  width:200rpx;
+  height:200rpx;
+  margin-top:160rpx;
+}
+
+.user-font{
+  font-size:32rpx;
+  font-weight: bold;
+}
+
+.border-title{
+  font-size:32rpx;
+  line-height: 80rpx;
+}
+
+.container-border{
+  margin-top:25px;
+  border:1px solid blue;
+  border-radius: 5rpx;
+  width:300rpx;
+  height:80rpx;
+  text-align:center;
+}

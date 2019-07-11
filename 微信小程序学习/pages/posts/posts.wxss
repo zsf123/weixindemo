@@ -1,0 +1,2 @@
+/* pages/post/posts.wxss */
+@import "post-item/post-item-template.wxss";

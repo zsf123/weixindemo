@@ -1,0 +1,25 @@
+<!--pages/post/posts.wxml
+10px=20rpx;rpx是自适应的大小，px是固定的
+-->
+<import src="post-item/post-item-template.wxml" />
+<view>
+  <swiper catch:tap="onSwiperTap" indicator-dots='true' autoplay="true" interval='1000'>
+    <swiper-item>
+      <image src="/images/wx.png" data-postId="5"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/vr.png" data-postId="4"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/post/sls.jpg" data-postId="3"></image>
+    </swiper-item>
+  </swiper>
+  <!-- 新闻列表 -->
+  <block wx:for="{{data_key}}" wx:key="1" wx:for-item="item" wx:for-index="idx">
+    <view catch:tap="onPostTap" data-postId="{{item.postId}}">
+      <template is="temp" data="{{...item}}" />
+    </view>
+  </block>
+
+
+</view>
